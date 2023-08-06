@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js (or index.js)
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importing Routes instead of Switch
+import Login from './login';
+//import SecondScreen from './Game';
+import Game from './Game';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* Route for the main login page */}
+        <Route path="/" element={<Login />} />
+        {/* Route for the second screen */}
+        <Route path="/game" element={<Game />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

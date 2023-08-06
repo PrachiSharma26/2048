@@ -1,0 +1,30 @@
+/* Login.css */
+.body{
+    background-color: rgb(220, 131, 240);
+}
+.login-page {
+    /* Set the parent container to use flexbox layout */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    background-color: rgb(231, 192, 240);
+  }
+  
+  .center-content {
+    /* Add some spacing around the content */
+    padding: 20px;
+    text-align: center;
+    height: 500px;
+  }
+  .rules{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+  }
+  .link{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+  }
+  
